@@ -1,7 +1,24 @@
 $(document).ready(function() {
 
+    var topics = ["dog", "cat", "giraffe", "lemur", "elephant", "cheetah", "bison"];
+
+    function populateButtons() {
+        $(".callButtons").empty();
+
+        topics.forEach(function(i) {
+            var callButton = $("<button class='button'>").text(i);
+            $(".callButtons").append(callButton);
+        }) ;
+    };
+
+    populateButtons();
+
+    // $(document).on("click", ".button")
+
     $("#button").on("click", function() {
-        var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=sEwA1wuLQLC8hDK9z5OURh5gmOA1TxHR&tag=cats";
+
+        var buttonPressed = "dogs"
+        var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + buttonPressed + "&api_key=dc6zaTOxFJmzC&limit=10";
 
         $.ajax({
         url: queryURL,
@@ -9,13 +26,7 @@ $(document).ready(function() {
         })
 
         .then(function(response) {
-
-            var imageUrl = response.data.image_original_url;
-
-            var catImage = $("<img>");
-            catImage.attr("src", imageUrl);
-
-            $("#images").prepend(catImage);
+            console.log(response);
         });
     });
 })
