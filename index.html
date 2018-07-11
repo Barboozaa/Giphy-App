@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="assets/js/app.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Giphy Button!</title>
 
@@ -14,17 +14,17 @@
 <body>
 
     <header>
-        <input id="input" type="text"/>
-        <button id="submit">Search</button>
+        <input required id="input" type="text"/>
+        <button id="submit">Add A Button</button>
     </header>
 
-    <div class="callButtons"></div>
+    <div class="contentWrapper clearfix">
 
-    <div class="gifs"></div>
+        <div class="callButtons"></div>
 
-    <button id="button">Click Me</button>
+        <div class="gifs"></div>
 
-    <div id="images"></div>
+    </div>
 
 </body>
 </html>

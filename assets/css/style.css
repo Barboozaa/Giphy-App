@@ -1,0 +1,61 @@
+html {
+    background-color: #EDF0F2;
+}
+
+header {
+    width: 100%;
+    background-color: #BFB085;
+}
+
+#input {
+    border: none;
+    margin: 10px;
+    margin-left: 35px;
+    padding: 10px 25px;
+}
+
+.contentWrapper {
+    width: 80%;
+    margin: 25px auto;
+    background-color: #DDD0C0
+}
+
+.callButtons {
+    margin: 15px
+}
+
+#submit, .button {
+    background-color: #3B3B3B;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px
+}
+
+p {
+    text-align: center;
+    margin: 10px
+}
+
+.item {
+    background-color: #F4F4F4;
+    width: 240px;
+    float: left;
+    margin: 15px
+}
+
+.gif {
+    margin: 10px auto;
+    position: relative;
+    left: 20px
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
